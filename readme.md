@@ -23,3 +23,11 @@ go mod tidy
 - "github.com/go-sql-driver/mysql"
 ### Hot Restart
 - Air
+
+# WIP CURD
+### Add
+
+### Del
+
+### Update
+### Find
