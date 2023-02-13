@@ -17,6 +17,7 @@ go mod tidy
 添加数据库配置文件
 ```
 # 配置自己的db信息
+
 host: xxx.xxx.xxx.xxx:xxxx
 user: xxxx
 pwd: xxxxxx
