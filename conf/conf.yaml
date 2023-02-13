@@ -1,0 +1,5 @@
+# 配置自己的db信息
+host: xxx.xxx.xxx.xxx:xxxx
+user: xx
+pwd: xx
+dbname: xx 
