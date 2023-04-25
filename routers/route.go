@@ -1,6 +1,7 @@
 package routers
 
 import (
+	"demo/controllers"
 	handler "demo/handler/user"
 	mw "demo/middleware"
 
@@ -9,9 +10,20 @@ import (
 
 func InitRoutes() *gin.Engine {
 	router := gin.Default()
+
+	uc:=&controllers.UserController{}
+
+	//登录
+	userTest := router.Group("/user")
+	{
+		userTest.POST("/register",uc.Register)
+		userTest.GET("/login",uc.Login)
+	}
 	//测试接口
 	commonTest := router.Group("/common")
 	{
+		
+
 		commonTest.GET("/test", mw.Logger(), handler.Test)
 
 		commonTest.GET("/user", handler.Get)

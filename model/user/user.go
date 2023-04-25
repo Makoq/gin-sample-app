@@ -5,3 +5,8 @@ type User struct {
 	Age  int
 	Name string
 }
+type Account struct {
+	Id   int
+	Name string
+	Pwd string
+}
